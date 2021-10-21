@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+.App {
+  text-align: left;
+  max-width: 900px;
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-family: 'Trade Winds', cursive;
+  font-size: 40px;
+  color: #a0a050;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: red;
+}
+
+h6 {
+  text-align: right;
+  padding-right: 20px;
+  color: grey;
+  margin: 0;
+  font-size: 10px;
+}
+
+label {
+  font-size: 12px;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 16px;
+  padding-top: 20px;
+  font-family: 'Trade Winds', cursive;
+  width: 175px;
+}
+
+a {
+  color: white;
+  background: grey;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 15px;
+}
+
+.button-list {
+  margin-right: 20px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: -webkit-inline-box;
+  border-radius: 5px;
+  border: none;
+  background-color: #a0a050;
+  font-size: 15px;
+}
+
+a.button-list {
+  color: black;
+  line-height: 16px;
+  cursor: default;
+}
+
+.headerimg {
+  margin-top: 25px;
+}
+
+img {
+  max-width: 700px;
+}
+
+form {
+  margin-bottom: 25px;
+}
+
+.room-list a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  line-height: 30px;
+  margin-right: 20px;
+}
+
+.sidebar {
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mainbody {
+  max-width: 700px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media print, screen and (max-width: 900px) {
+  .sidebar, .mainbody {
+    display: block;
+    padding: 10px;
+  }
+  .App {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.not {
+  background: #B61A1D;
+}
+
+.finished {
+  background-color: #80C24B;
+}
+
+.quote {
+  color: #a0a050;
+  font-family: 'Trade Winds', cursive;
+}
+
+.tarot-container {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.tarot-container h1, .tarot-container p {
+  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  width: auto;
+  margin: 0;
+  display: inline-block;
+}
+
+.tarot-container p {
+  margin: 10px 0 0 0;
+}
+
+.tarot-container .card-holder {
+  perspective: 700px;
+}
+
+.tarot-container .card-base, .tarot-container .card {
+  height: 210px;
+  width: 120px;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.tarot-container .card {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.pickCard1, .pickCard2, .pickCard3 {
+  top: -90vh;
+  opacity: 0.25;
+}
+
+.tarot-container .flipping {
+  transform: translate(0, 20px) rotateY(90deg);
+  -webkit-transform: translate(0, 20px) rotateY(90deg);
+}
+
+.tarot-container .meanings p {
+  margin: 0;
+  padding: 1vw;
+  font-size: 14px;
+  color: #fff;
+}
+
+.tarot-container .meanings div {
+  width: 17vw;
+  margin: 1vw;
+  display: inline-block;
+}
+
+.meaning1, .meaning2, .meaning3 {
+  vertical-align: top;
+}
